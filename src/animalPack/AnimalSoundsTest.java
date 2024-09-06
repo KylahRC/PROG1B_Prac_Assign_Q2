@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class AnimalSoundsTest
 {
-//    test to see if the dog do be woofin'
+//    test to see what the dog doin'
     @Test
     void testDogSound()
     {
