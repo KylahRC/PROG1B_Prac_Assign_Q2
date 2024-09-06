@@ -2,6 +2,10 @@ package animalPack;
 
 import java.util.Scanner;
 
+//hey it may be simple but it sure does work
+
+//the superclass purely so I can override it
+//what a sad existence
 class AnimalSounds
 {
     public void makeSound()
@@ -10,6 +14,7 @@ class AnimalSounds
     }
 }
 
+//makes the sound be for a dog specifically
  class Dog extends AnimalSounds
 {
     @Override
@@ -20,6 +25,8 @@ class AnimalSounds
     }
 }
 
+
+//makes the sound be for a cat specifically
 class Cat extends AnimalSounds
 {
     @Override
@@ -30,6 +37,8 @@ class Cat extends AnimalSounds
     }
 }
 
+
+//makes the sound be for a bird specifically
 class Bird extends AnimalSounds
 {
     @Override
@@ -40,6 +49,8 @@ class Bird extends AnimalSounds
     }
 }
 
+
+//makes the sound be for a rat specifically
 class Rat extends AnimalSounds
 {
     @Override
@@ -50,6 +61,10 @@ class Rat extends AnimalSounds
     }
 }
 
+
+//makes the sound be for a fish specifically
+//it took a while to decide what a fish should say
+//so I decided it shouldn't
 class Fish extends AnimalSounds
 {
     @Override
@@ -60,22 +75,27 @@ class Fish extends AnimalSounds
     }
 }
 
+//part that runs the program
 public class Main
 {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
 
+//        menu
+        System.out.println("---------------------------------------");
         System.out.println("Choose an animal to hear the sound it makes:");
         System.out.println("(1) Dog");
         System.out.println("(2) Cat");
         System.out.println("(3) Bird");
         System.out.println("(4) Rat");
         System.out.println("(5) Fish");
+        System.out.println("---------------------------------------");
 
         int mainMenuSelection = scanner.nextInt();
         scanner.nextLine();
 
+//        switch to select animal noise
         switch (mainMenuSelection)
         {
             case 1:
